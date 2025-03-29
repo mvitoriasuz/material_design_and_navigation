@@ -32,7 +32,13 @@ class _InsanelyButtonPageState extends State<InsanelyButtonPage> {
               height: 150,
               child: FilledButton(
                 onPressed: () {}, 
-                child: Text('InsanelyButton'),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('InsanelyButton'),
+                    Text('0', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),)
+                  ],
+                ),
               ),
             ),
           ],
