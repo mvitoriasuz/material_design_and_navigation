@@ -18,12 +18,23 @@ class _InsanelyButtonPageState extends State<InsanelyButtonPage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text('Timer', style: TextStyle(fontSize: 72)),
-            Text('30', style: TextStyle(fontSize: 72, fontWeight: FontWeight.bold)),
+            Text('30', style: contadorStyle),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [Text('Start'), Text('Pause'), Text('Reset')],
+              children:[ 
+              ElevatedButton(onPressed: () {}, child: Text('Start')), 
+              ElevatedButton(onPressed: () {}, child: Text('Pause')), 
+              ElevatedButton(onPressed: () {}, child: Text('Reset')), 
+              ]
             ),
-            Text('InsaneyButton'),
+            SizedBox(
+              width: 150,
+              height: 150,
+              child: FilledButton(
+                onPressed: () {}, 
+                child: Text('InsanelyButton'),
+              ),
+            ),
           ],
         ),
       ),
